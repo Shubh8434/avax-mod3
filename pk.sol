@@ -12,11 +12,11 @@ contract PercyJackson is ERC20, ERC20Burnable, Ownable {
     {
     }
 
-    function mint(address to, uint256 amount) public onlyOwner {
-        _mint(to, amount);
+    function mint(address addr, uint256 token) public onlyOwner {
+        _mint(addr, token);
     }
 
-    function mint(address to, uint256 amount) public onlyOwner {
-        _mint(to, amount);
+    function burn(address addr, uint256 token) public onlyOwner {
+        _burn(addr, token);
     }
 }
